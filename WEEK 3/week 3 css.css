@@ -8,28 +8,41 @@ body {
     font-family: system-ui, sans-serif;
     line-height: 1.6;
     padding: 2rem;
-    background-color: burlywood;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #109b0d;
+    color: #fdfbfb;
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 h1 {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
     margin-bottom: 1rem;
 }
 
 section {
-    background: #e32525;
+    background: #cb0909;
     padding: 1.5rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e2e2;
 }
 
 button {
     background: #0066cc;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 button:hover {
@@ -41,27 +54,38 @@ button:hover {
     font-size: 1.5rem;
 }
 
+/* Rock Paper Scissors */
 .choices {
     display: flex;
     gap: 1rem;
     margin: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .choice-btn {
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
 }
+
 .choice-btn.selected {
     background-color: #004400;
     transform: scale(1.1);
 }
 
 #result {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-top: 1rem;
 }
 
+.scores {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Flatland */
 #flatland {
     text-align: center;
 }
@@ -78,11 +102,73 @@ button:hover {
     transform: rotate(45deg);
 }
 
-#square.green { background-color: #00aa00; }
-#square.red { background-color: #aa0000; }
-#square.blue { background-color: #0000aa; }
-#square.large { transform: scale(1.5); }
+#square.green {
+    background-color: #00aa00;
+}
 
+#square.red {
+    background-color: #aa0000;
+}
+
+#square.blue {
+    background-color: #0000aa;
+}
+
+#square.large {
+    transform: scale(1.5);
+}
+
+/* Buzzword and history */
+#buzzword {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+#historyList {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+#historyList li {
+    margin-bottom: 0.5rem;
+}
+
+#historyList button {
+    margin-left: 1rem;
+    background: #cc0000;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.9rem;
+}
+
+#historyList button:hover {
+    background: #990000;
+}
+
+/* Card demo */
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+/* Toggle */
 .hidden {
     display: none;
+}
+
+#toggleContent {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #ddd;
 }

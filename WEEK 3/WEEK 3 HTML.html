@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Practice</title>
-    <link rel="stylesheet" href="C:\Users\Divesh\OneDrive\Desktop\BWMT\WEEK 3\Untitled-2.css">
+    <title>JavaScript Practice - Module 03</title>
+    <link rel="stylesheet" href="C:\Users\Divesh\OneDrive\Desktop\BWMT\WEEK 3\week 3 css.css">
 </head>
 <body>
     <header>
@@ -12,57 +12,72 @@
     </header>
 
     <main>
-        <section id="game">
-    <h2>Rock, Paper, Scissors</h2>
-    <div class="choices">
-        <button id="rockBtn" class="choice-btn">Rock</button>
-        <button id="paperBtn" class="choice-btn">Paper</button>
-        <button id="scissorsBtn" class="choice-btn">Scissors</button>
-    </div>
-    <p id="result">Make your choice!</p>
-</section>
+        <!-- Activity 1 + 2: Click Counter -->
         <section id="demo">
             <h2>Click Counter</h2>
             <p>Count: <span id="count">0</span></p>
             <button id="incrementBtn">Add One</button>
         </section>
+
+        <!-- Activity 2: Rock Paper Scissors -->
+        <section id="game">
+            <h2>Rock, Paper, Scissors</h2>
+
+            <div class="scores">
+                <p>Player: <span id="playerScore">0</span></p>
+                <p>Computer: <span id="computerScore">0</span></p>
+            </div>
+
+            <div class="choices">
+                <button id="rockBtn" class="choice-btn">Rock</button>
+                <button id="paperBtn" class="choice-btn">Paper</button>
+                <button id="scissorsBtn" class="choice-btn">Scissors</button>
+            </div>
+
+            <p id="result">Make your choice!</p>
+        </section>
+
+        <!-- Activity 3: Flatland -->
         <section id="flatland">
-    <h2>Flatland Animation</h2>
-    <div id="square"></div>
-    <p id="words">Hover over the square!</p>
-</section>
+            <h2>Flatland Animation</h2>
+            <div id="square"></div>
+            <p id="words">Hover over the square!</p>
+        </section>
 
-<section id="generator">
-    <h2>Buzzword Generator</h2>
-    <button id="generateBtn">Generate Buzzword</button>
-    <p id="buzzword">Click to generate!</p>
-</section>
+        <!-- Activity 3: Buzzword Generator -->
+        <section id="generator">
+            <h2>Buzzword Generator</h2>
+            <button id="generateBtn">Generate Buzzword</button>
+            <p id="buzzword">Click to generate!</p>
+        </section>
 
-<section id="history">
-    <h2>Generated History</h2>
-    <ul id="historyList"></ul>
-    <button id="clearHistory">Clear History</button>
-</section>
-<div class="card" data-category="tech" data-id="1">
-    <h3>Technology Card</h3>
-    <p>This card has custom data attributes.</p>
-    <button class="show-data">Show Data</button>
-</div>
+        <!-- Activity 3: History -->
+        <section id="history">
+            <h2>Generated History</h2>
+            <ul id="historyList"></ul>
+            <button id="clearHistory">Clear History</button>
+        </section>
 
-<section id="toggle-demo">
-    <h2>Toggle Demo</h2>
-    <button id="toggleBtn">Toggle Content</button>
-    <div id="toggleContent">
-        <p>This content can be shown or hidden!</p>
-    </div>
-</section>
+        <!-- Activity 3: Data Attributes -->
+        <section id="data-demo">
+            <h2>Data Attributes Demo</h2>
+            <div class="card" data-category="tech" data-id="1">
+                <h3>Technology Card</h3>
+                <p>This card has custom data attributes.</p>
+                <button class="show-data">Show Data</button>
+            </div>
+        </section>
+
+        <!-- Activity 3: Toggle -->
+        <section id="toggle-demo">
+            <h2>Toggle Demo</h2>
+            <button id="toggleBtn">Hide Content</button>
+            <div id="toggleContent">
+                <p>This content can be shown or hidden!</p>
+            </div>
+        </section>
     </main>
 
-    <div class="scores">
-    <p>Player: <span id="playerScore">0</span></p>
-    <p>Computer: <span id="computerScore">0</span></p>
-</div>
-
-    <script src="C:\Users\Divesh\OneDrive\Desktop\BWMT\WEEK 3\Untitled-3.js"></script>
+    <script src="C:\Users\Divesh\OneDrive\Desktop\BWMT\WEEK 3\WEEK 3.js"></script>
 </body>
 </html>
