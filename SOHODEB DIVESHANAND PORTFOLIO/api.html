@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Sohodeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>API Page</h1>
+        <p>Reading data from an external API using JavaScript</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects & Games</a></li>
+            <li><a href="api.html">API DEMO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Posts Reader</h2>
+            <p>
+                This page uses JavaScript to fetch data from an online API
+                and display the posts on the screen.
+            </p>
+
+            <div class="controls">
+                <button id="loadBtn">Load Posts</button>
+                <button id="loadSingleBtn">Load Post 1</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+
+            <div id="status"></div>
+
+            <div id="posts-container">
+                <p class="placeholder">Click a button to load data from the API.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sohodeb Divesh Anand</p>
+    </footer>
+
+    <script src="api.js"></script>
+</body>
+</html>

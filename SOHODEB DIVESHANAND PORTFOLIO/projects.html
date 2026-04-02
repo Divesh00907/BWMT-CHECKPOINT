@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sohodeb</title>
+</head>
+<body>
+
+<header>
+    <h1>My Projects & Games</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="projects.html">Projects & Games</a></li>
+        <li><a href="api.html">API DEMO</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- ROCK PAPER SCISSORS -->
+    <section class="rps-section">
+    <h2>Rock Paper Scissors</h2>
+
+    <div class="scores">
+        <p>Player: <span id="playerScore">0</span></p>
+        <p>Computer: <span id="computerScore">0</span></p>
+    </div>
+
+    <div class="rps-buttons">
+        <button class="choice-btn">🪨 Rock</button>
+        <button class="choice-btn">📄 Paper</button>
+        <button class="choice-btn">✂️ Scissors</button>
+    </div>
+
+    <button id="resetBtn">Reset Score</button>
+
+    <p id="result">Make your choice!</p>
+</section>
+
+    <!-- FLATLAND -->
+    <section>
+        <h2>Flatland Animation</h2>
+
+        <div id="square"></div>
+        <p id="words">Hover over the square!</p>
+    </section>
+
+</main>
+
+<script src="projects.js"></script>
+</body>
+</html>
